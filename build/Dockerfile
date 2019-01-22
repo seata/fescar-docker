@@ -1,7 +1,5 @@
 # https://hub.docker.com/_/openjdk
-FROM 192.168.10.129:12345/openjdk:8-jre
-
-LABEL version="0.1.1"
+FROM openjdk:8-jre
 
 # set environment
 ENV FESCAR_USER="fescar" \
