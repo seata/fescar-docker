@@ -4,5 +4,5 @@
 ```
     git clone https://github.com/fescar-group/fescar-docker.git
     cd fescar-docker
-    docker build -t fescar:0.1.2 .\build\
+    docker build -t fescar:0.2.0 .\build\
 ```
