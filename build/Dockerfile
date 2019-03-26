@@ -10,7 +10,7 @@ ENV FESCAR_USER="fescar" \
     JAVA="/usr/lib/jvm/java-1.8.0-openjdk/bin/java" \
     TIME_ZONE="Asia/Shanghai" 
    
-ARG FESCAR_VERSION=0.2.0
+ARG FESCAR_VERSION=0.4.0
 
 WORKDIR /$BASE_DIR
 
