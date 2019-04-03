@@ -1,0 +1,15 @@
+version: "2"
+services:
+   samples-order:
+    image: samples-order:1.0.0
+    container_name: samples-order
+    ports:
+    - "8101:8101"
+    external_links:
+    - nacos
+    - fescar
+    - mysql
+networks:
+  default:
+    external:
+      name: app_net
