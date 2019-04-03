@@ -39,7 +39,7 @@ https://github.com/niaoshuai/fescar-samples
     curl  -H "Content-Type: application/json" -X POST --data "{\"commodityCode\":\"C201901140001\",\"count\":100}"   127.0.0.1:8100/storage/dec_storage
     # 订单服务 添加订单 扣费
     curl  -H "Content-Type: application/json" -X POST --data "{\"userId\":\"1\",\"commodityCode\":\"C201901140001\",\"orderCount\":10,\"orderAmount\":100}"   127.0.0.1:8101/order/create_order
-    # 业务服务 TODO 500 
+    # 业务服务 客户端fescar版本太低
     curl  -H "Content-Type: application/json" -X POST --data "{\"userId\":\"1\",\"commodityCode\":\"C201901140001\",\"count\":10,\"amount\":100}"   127.0.0.1:8104/business/dubbo/buy
  ```
 
