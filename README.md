@@ -4,13 +4,13 @@
 
 https://github.com/seata/seata
 
-https://github.com/niaoshuai/fescar-samples
+https://github.com/fescar-group/fescar-samples/tree/docker/springboot-dubbo-fescar
 
 ## 本地构建(体验)
 ```sh
 git clone https://github.com/fescar-group/fescar-docker.git
 cd fescar-docker
-docker build -t fescar:0.4.0 .\build\
+docker build -t fescar:0.4.1 .\build\
 ```
 
 ## 案例使用帮助
