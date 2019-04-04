@@ -1,0 +1,14 @@
+version: "2"
+services:
+  samples-dubbo-business-call:
+    image: samples-dubbo-business-call:1.0.0
+    container_name: samples-dubbo-business-call
+    ports:
+    - "8104:8104"
+    external_links:
+    - nacos
+    - fescar
+networks:
+  default:
+    external:
+      name: app_net
