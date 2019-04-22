@@ -14,7 +14,7 @@ docker build -t seata:0.5.0 .\build\
 ```
 
 ## 案例使用帮助
-由于一些原因, seata docker 镜像使用暂不提供容器外部调用 ,那么需要案例相关项目也在容器内部 和fescar镜像保持link模式
+由于一些原因, seata docker 镜像使用暂不提供容器外部调用 ,那么需要案例相关项目也在容器内部 和 seata 镜像保持link模式
 
 ```sh
 ## 创建一个单独的网络
