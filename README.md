@@ -1,25 +1,25 @@
-# fescar-docker
+# seata-docker
 
 关联项目:
 
 https://github.com/seata/seata
 
-https://github.com/fescar-group/fescar-samples/tree/docker/springboot-dubbo-fescar
+https://github.com/seata/seata-samples/tree/docker/springboot-dubbo-seata
 
 ## 本地构建(体验)
 ```sh
-git clone https://github.com/fescar-group/fescar-docker.git
-cd fescar-docker
-docker build -t fescar:0.4.1 .\build\
+git clone https://github.com/seata/seata-docker.git
+cd seata-docker
+docker build -t seata:0.5.0 .\build\
 ```
 
 ## 案例使用帮助
-由于一些原因, fescar docker 镜像使用暂不提供容器外部调用 ,那么需要案例相关项目也在容器内部 和fescar镜像保持link模式
+由于一些原因, seata docker 镜像使用暂不提供容器外部调用 ,那么需要案例相关项目也在容器内部 和fescar镜像保持link模式
 
 ```sh
 ## 创建一个单独的网络
 docker network create app_net
-## 启动 env (nacos,fescar,mysql)
+## 启动 env (nacos,seata,mysql)
 docker-compose -f example/env.yaml up
 ## 启动 example (samples-account,samples-storage)
 docker-compose -f example/example.yaml up
@@ -39,7 +39,7 @@ curl  -H "Content-Type: application/json" -X POST --data "{\"id\":1,\"userId\":\
 curl  -H "Content-Type: application/json" -X POST --data "{\"commodityCode\":\"C201901140001\",\"count\":100}"   127.0.0.1:8100/storage/dec_storage
 # 订单服务 添加订单 扣费
 curl  -H "Content-Type: application/json" -X POST --data "{\"userId\":\"1\",\"commodityCode\":\"C201901140001\",\"orderCount\":10,\"orderAmount\":100}"   127.0.0.1:8101/order/create_order
-# 业务服务 客户端fescar版本太低
+# 业务服务 客户端seata版本太低
 curl  -H "Content-Type: application/json" -X POST --data "{\"userId\":\"1\",\"commodityCode\":\"C201901140001\",\"count\":10,\"amount\":100}"   127.0.0.1:8104/business/dubbo/buy
  ```
 
