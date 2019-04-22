@@ -4,7 +4,7 @@
 
 https://github.com/seata/seata
 
-https://github.com/seata/seata-samples/tree/docker/springboot-dubbo-seata
+https://github.com/seata/seata-samples/tree/docker/springboot-dubbo-fescar
 
 ## 本地构建(体验)
 ```sh
