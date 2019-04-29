@@ -7,7 +7,7 @@ services:
     - "8101:8101"
     external_links:
     - nacos
-    - fescar
+    - seata
     - mysql
 networks:
   default:
