@@ -7,7 +7,7 @@ services:
     - "8102:8102"
     external_links:
     - nacos
-    - fescar
+    - seata
     - mysql
   samples-storage:
     image: samples-storage:1.0.0
@@ -16,7 +16,7 @@ services:
     - "8100:8100"
     external_links:
     - nacos
-    - fescar
+    - seata
     - mysql
 networks:
   default:
