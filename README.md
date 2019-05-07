@@ -10,7 +10,7 @@ https://github.com/seata/seata-samples/tree/docker/springboot-dubbo-fescar
 ```sh
 git clone https://github.com/seata/seata-docker.git
 cd seata-docker
-docker build -t seata:0.5.0 .\build\
+docker build -t seata:0.5.1 .\build\
 ```
 
 ## 案例使用帮助
