@@ -17,7 +17,7 @@ WORKDIR /$BASE_DIR
 RUN set -x \
     && yum update -y \
     && yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel wget iputils nc vim libcurl \
-    && wget  https://github.com/seata/seata/releases/download/v${FESCAR_VERSION}/seata-server-${SEATA_VERSION}.tar.gz -P /home \
+    && wget  https://github.com/seata/seata/releases/download/v${SEATA_VERSION}/seata-server-${SEATA_VERSION}.tar.gz -P /home \
     && mkdir /opt/seata \
     && tar -xzvf /home/seata-server-${SEATA_VERSION}.tar.gz -C /opt/seata \
     && rm -rf /home/seata-server-${SEATA_VERSION}.tar.gz \
